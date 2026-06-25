@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<title>محصولات</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+    margin:0;
+    background-image:url("7875e05c-1dc7-4db0-991d-6dee4bd09425.png");
+    background-size:cover;
+    background-position:center;
+    font-family: sans-serif;
+}
+
+/* هدر */
+header{
+    background-color:#8B4513;
+    padding:10px 20px;
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:50px;
+}
+
+/* منو */
+nav ul{
+    display:flex;
+    list-style:none;
+    margin:0;
+    padding:0;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:6px 10px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background-color:rgb(186, 147, 73);
+}
+
+.footer{
+    background-color:#8B4513;
+    color:white;
+    text-align:center;
+    padding:10px 20px;
+}
+.products{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:30px;
+}
+.products-card{
+    width:250px;
+    border-radius:10px;
+    background-color: #FFEFD5;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction:column;
+    gap:20px;
+    padding: 20px;
+    text-align:center;
+    transition:0.3s;
+}
+.products-card:hover{
+    transform:translateY(-5px);
+}
+.products-btn{
+    margin-top:auto;
+    border-radius: 15px;
+    background-color: #8B4513;
+    color: white;
+    padding: 10px 20px;
+    transition: 0.3s;
+    text-decoration:none;
+}
+.products-btn:hover{
+    transform:scale(1.05);
+    background-color:#b86b28;
+
+}
+.products-card img{
+    width: 100%;
+    height:180px;
+    object-fit:cover;
+    border-radius: 10px;
+}
+.products-card h3{
+    font-family: sans-serif;
+    color: #5A2D0C;
+    text-align: center;
+}
+.products-card p{
+    line-height:1.8;
+    display:-webkit-box;
+    -webkit-line-clamp:4;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+.product-info{
+    display:flex;
+    gap:10px;
+}
+
+.info-box{
+    flex:1;
+    background-color:rgba(0,0,0,0.1);
+    border-radius:10px;
+    padding: 5px;
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    text-align:center;
+    color:#5A2D0C;
+    font-weight:bold;
+}
+.search-box{
+    display:flex;
+    justify-content:center;
+}
+
+.search-box input{
+    width:300px;
+    max-width:80%;
+    padding:12px 20px;
+    border-radius:0 30px 30px 0;
+    border:none;
+    font-size:16px;
+    outline:none;
+    background-color:rgba(255,255,255,0.8);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+.search-box button{
+    padding:12px 18px;
+    border:none;
+    border-radius:30px 0 0 30px;
+    background-color:rgba(255,255,255,0.8);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.search-box input:focus{
+    box-shadow:0 0 10px rgba(139,69,19,0.3);
+}
+/*رسپانسیو */
+@media (max-width:768px){
+
+header{
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    text-align:center;
+}
+
+nav ul{
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+}
+}
+
+</style>
+</head>
+
+<body>
+<header >
+    <div class="logo">
+        <img src="imageslogo.png">
+    </div>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">خانه</a></li>
+            <li><a href="maghale.html">مقالات</a></li>
+            <li><a href="about.html">درباره ما</a></li>
+            <li><a href="Contact Us.html">تماس با ما</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="hero">
+    <div class="hero-content">
+        <h1>محصولات خرما زرین</h1>
+        <p>بهترین خرماهای ایرانی با کیفیت ممتاز</p>
+    </div>
+</section>
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="نام خرما را وارد کنید">
+    <button id="searchBtn">🔍</button>
+</div>
+
+<section class="products">
+<article class="products-card">
+<img src="piarom1.jpg" alt="خرما پیارم">
+<h3>خرما پیارم</h3>
+<p>خرمای پیارم یکی از گران‌بها‌ترین، مرغوب‌ترین و لوکس‌ترین ارقام خرمای کشت شده در ایران است که آوازه کیفیت آن از مرزهای کشور فراتر رفته و به عنوان یک محصول صادراتی تراز اول در بازارهای جهانی شناخته می‌شود.</p>
+<a href="#" class="products-btn">افزودن به سبد خرید</a>
+<div class="product-info">
+    <div class="info-box">
+        <span>وزن:</span>
+        <span>1 کیلوگرم</span>
+    </div>
+
+    <div class="info-box">
+        <span>قیمت:</span>
+        <span>600,000 تومان</span>
+    </div>
+</div>
+</article>
+
+<article class="products-card">
+<img src="خرمای-زاهدی-درجه-یک.jpg" alt="خرما زاهدی">
+<h3>خرما زاهدی ممتاز</h3>
+<p>خرمای زاهدی که بیشتر ما آن را به خرمای خشک می شناسیم، یک نوع خرمای مرغوب است که در بیشتر نواحی جنوب ایران وجود دارد. خشک بودن خرمای زاهدی ماندگاری آن را بالا می برد  و  آن را برای مصرف بلندمدت و همچنین انتقال و صادرات کم دردسر مناسب می کند.</p>
+<a href="#" class="products-btn">افزودن به سبد خرید</a>
+<div class="product-info">
+    <div class="info-box">
+        <span>وزن:</span>
+        <span>1 کیلوگرم</span>
+    </div>
+
+    <div class="info-box">
+        <span>قیمت:</span>
+        <span>370,000 تومان</span>
+    </div>
+</div>
+</article>
+
+<article class="products-card">
+<img src="images1.jpg" alt="خرما کبکاب">
+<h3>خرما کبکاب</h3>
+<p>خرمای کبکاب که به خرمای دشتستان نیز معروف است، یکی از انواع خرماهای ایرانی است که گفته می شود پس از خرمای مضافتی، بیشترین مصرف خرمای کشور را به خود اختصاص داده است.</p>
+<a href="#" class="products-btn">افزودن به سبد خرید</a>
+<div class="product-info">
+    <div class="info-box">
+        <span>وزن:</span>
+        <span>1 کیلوگرم</span>
+    </div>
+
+    <div class="info-box">
+        <span>قیمت:</span>
+        <span>400,000 تومان</span>
+    </div>
+</div>
+</article>
+
+<article class="products-card">
+<img src="C600X500_673417178353.jpg" alt="خرما ربی">
+<h3>خرما ربی</h3>
+<p>خرمای ربی (Rabbi Date) در میان گنجینه های کشاورزی ایران، همچون یک الماس تیره و ارزشمند می درخشد. این خرما که یکی از مهم ترین ارقام نیمه خشک کشور است، با رنگ قهوه ای تیره، طعم منحصربه فرد و ماندگاری بالا، به یک گزینه استراتژیک برای بازار داخلی و به ویژه صادرات تبدیل شده است.</p>
+<a href="#" class="products-btn">افزودن به سبد خرید</a>
+<div class="product-info">
+    <div class="info-box">
+        <span>وزن:</span>
+        <span>1 کیلوگرم</span>
+    </div>
+
+    <div class="info-box">
+        <span>قیمت:</span>
+        <span>450,000 تومان</span>
+    </div>
+</div>
+</article>
+
+<article class="products-card">
+<img src="1033-1.jpg" alt="خرما خاصویی">
+<h3>خرمای خاصویی</h3>
+<p>خرمای خاصویی آجیلی یکی از خوش‌طعم‌ترین و محبوب‌ترین انواع خرماست که به خاطر اندازه کوچک، بافت نرم و طعم شیرین و دلنشینش شناخته می‌شود. این خرما با ظاهری جذاب و کیفیتی ممتاز، انتخابی عالی برای مصرف روزانه، پذیرایی و استفاده در کنار چای، آجیل و تنقلات سالم به شمار می‌آید.</p>
+<a href="#" class="products-btn">افزودن به سبد خرید</a>
+<div class="product-info">
+    <div class="info-box">
+        <span>وزن:</span>
+        <span>1 کیلوگرم</span>
+    </div>
+
+    <div class="info-box">
+        <span>قیمت:</span>
+        <span>500,000 تومان</span>
+    </div>
+</div>
+</article>
+
+<article class="products-card">
+<img src="mazafati.jpg" alt="خرما مضافتی">
+<h3>خرما مضافتی</h3>
+<p>خرما دارای ارزش غذایی کاملاً غنی است. این میوه در مناطق گرمسیری رشد می‌کند. جنوب ایران ازجمله مناطق کشت خرماست. خرما حاوی انواع ویتامین‌ها و مواد معدنی است و مقدار قابل‌توجهی اسیدفولیک به بدن می‌رساند که باعث افزایش خون‌سازی در بدن می‌شود.</p>
+<a href="#" class="products-btn">افزودن به سبد خرید</a>
+<div class="product-info">
+    <div class="info-box">
+        <span>وزن:</span>
+        <span>600 گرم</span>
+    </div>
+
+    <div class="info-box">
+        <span>قیمت:</span>
+        <span>430,000 تومان</span>
+    </div>
+</div>
+</article>
+
+<article class="products-card">
+<img src="01-what-is-honey-date.jpg" alt="رطب عسلی">
+<h3>رطب عسلی</h3>
+<p>خرما عسلی، که گاهی با نام رطب زرد عسلی هم شناخته می‌شود، در واقع همان نوعی از رطب نخل کبکاب است که به دلیل رنگ زرد طلایی و طعم شیرین و لطیفش، به این نام معروف شده است. این خرما در مرحله‌ای بین خارک و خرمای کامل برداشت می‌شود.</p>
+<a href="#" class="products-btn">افزودن به سبد خرید</a>
+<div class="product-info">
+    <div class="info-box">
+        <span>وزن:</span>
+        <span>800 گرم</span>
+    </div>
+
+    <div class="info-box">
+        <span>قیمت:</span>
+        <span>280,000 تومان</span>
+    </div>
+</div>
+</article>
+
+<article class="products-card">
+<img src="1-6.jpg" alt="خرما مجول">
+<h3>خرما مجول</h3>
+<p>در بین انواع خرما،خرمای مجول یکی از خرماهای بزرگ و نرم است که به خاطر طعم شیرین و گوشت نرمش معروف شده است. این خرما معمولا اندازه بزرگی دارد و گاهی ظاهری چروکیده یا کم آب پیدا می‌کند.</p>
+<a href="#" class="products-btn">افزودن به سبد خرید</a>
+<div class="product-info">
+    <div class="info-box">
+        <span>وزن:</span>
+        <span>500 گرم</span>
+    </div>
+
+    <div class="info-box">
+        <span>قیمت:</span>
+        <span>900,000 تومان</span>
+    </div>
+</div>
+</article>
+</section>
+
+
+<footer class="footer">
+<p>© 2026 خرما زرین - تمامی حقوق محفوظ است.</p>
+</footer>
+
+<script>
+const searchBtn = document.getElementById("searchBtn");
+const searchInput = document.getElementById("searchInput");
+const cards = document.querySelectorAll(".products-card");
+
+searchBtn.addEventListener("click", function(){
+
+    const searchText = searchInput.value;
+
+    cards.forEach(card => {
+
+        const productName = card.querySelector("h3").innerText;
+
+        if(productName.includes(searchText)){
+            card.style.display = "flex";
+        }else{
+            card.style.display = "none";
+        }
+
+    });
+});
+
+</script>
+</body>
+</html>
