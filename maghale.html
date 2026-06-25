@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<title>مقالات</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+    margin:0;
+    font-family:sans-serif;
+}
+
+/* هدر */
+header{
+    background-color:#8B4513;
+    padding:10px 20px;
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:50px;
+}
+
+/* منو */
+nav ul{
+    display:flex;
+    list-style:none;
+    margin:0;
+    padding:0;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:6px 10px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background-color:rgb(186, 147, 73);
+}
+
+/* دکمه‌های سمت چپ */
+.header1{
+    margin-right:auto;
+    display:flex;
+    gap:10px;
+}
+
+/* دکمه اصلی */
+.btn{
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:8px;
+    font-weight:bold;
+    background:#5a2d0c;
+    display:inline-block;
+    transition:0.3s;
+}
+
+/* هاور درست و یکپارچه */
+.btn:hover{
+    background-color:rgb(186, 147, 73);
+    transform:translateY(-5px) scale(1.05);
+}
+
+/* عنوان مقالات */
+.articles-header{
+    text-align:center;
+    padding:60px 20px 20px;
+}
+
+/* لیست مقالات */
+.articles{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+    padding:20px;
+}
+
+/* کارت مقاله */
+article{
+    width:220px;
+    background:#f5f5f5;
+    border-radius:10px;
+    padding:10px;
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    height:420px;
+}
+
+article img{
+    width:200px;
+    height: 150px;
+    border-radius:8px;
+}
+
+article a{
+    margin-top:auto;
+    display:inline-block;
+    color:#8B4513;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+article p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    line-height: 1.8;
+}
+    footer{
+    background:#8B4513;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+
+/* رسپانسیو */
+@media (max-width: 600px) {
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header1{
+        margin-right: 0;
+        display:flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 25px;
+    }
+
+    .btn{
+        padding:10px 18px;
+    }
+    .articles{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article{
+        width: 90%;
+        height: auto;
+    }
+
+    article img{
+        width: 100%;
+        height: auto;
+    }
+
+    .articles-header{
+        padding: 30px 10px 10px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- هدر -->
+<header>
+
+    <div class="logo">
+        <img src="image/imageslogo.png" alt="لوگو">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">خانه</a></li>
+            <li><a href="maghale.html">مقالات</a></li>
+            <li><a href="about.html">درباره ما</a></li>
+            <li><a href="Contact Us.html">تماس با ما</a></li>
+        </ul>
+    </nav>
+    <nav class="header1">
+    <a href="login.html" class="btn">ورود</a>
+    <a href="#" class="btn">سفارش آنلاین</a>
+    </nav>
+
+</header>
+<!-- مقالات -->
+<section class="articles">
+
+    <article>
+        <img src="image/images2.jpg" alt="عکس">
+        <h3>خرمای پیارم</h3>
+        <p>خرما یکی از مهم‌ترین محصولات کشاورزی مناطق گرمسیری جهان به شمار می‌رود و ایران نیز به عنوان یکی از بزرگ‌ترین تولیدکنندگان خرما، انواع متنوعی از این محصول ارزشمند را تولید می‌کند. در میان ارقام مختلف خرما، خرمای پیارم به دلیل کیفیت بالا، طعم دلپذیر و ارزش غذایی فراوان، جایگاه ویژه‌ای در بازارهای داخلی و خارجی دارد و به عنوان لوکس‌ترین خرمای ایران شناخته می‌شود.</p>
+        <a href="piarom.html">بیشتر</a>
+    </article>
+
+    <article>
+        <img src="image/images1.jpg" alt="عکس">
+        <h3>خرما مضافتی بم</h3>
+        <p> خرمای مضافتی شامل آهن، انرژی، کلسیم، پتاسیم و مواد مفید دیگر می‌شود. مصرف خرمای مضافتی برای بهبود وضعیت قلب،...</p>
+        <a href="#">بیشتر</a>
+    </article>
+
+    <article>
+        <img src="image/images.jpg" alt="عکس">
+        <h3>رطب شیرین</h3>
+        <p>خرما خواص زیادی برای سلامتی بدن دارد که از جمله‌ی آن‌ها می‌توانیم به کاهش وزن و چربی‌سوزی، جلوگیری از سرطان روده و...</p>
+                <a href="#">بیشتر</a>
+    </article>
+      <article>
+        <img src="image/Organic-Medjool-Dates.jpg" alt="عکس">
+        <h3>خرما مجول</h3>
+        <p>خرمای مجول که به “ملکه خرماها” معروف است، یکی از معروف‌ترین و پرطرفدارترین انواع خرما در جهان است. این نوع خرما بیشتر در کشور مراکش تولید می‌شود و به دلیل اندازه بزرگ، بافت نرم و طعم بسیار شیرینش، شهرت جهانی دارد.</p>
+        <a href="#">بیشتر</a>
+    </article>
+
+    <article>
+        <img src="image/ivwkjklbhfjx.jpeg" alt="عکس">
+        <h3>خرما کبکاب</h3>
+        <p>خرمای کبکاب یکی از انواع خرمای محبوب و پرمصرف در ایران است که بیشتر در استان‌های بوشهر و خوزستان کشت می‌شود. این خرما دارای رنگ قهوه‌ای روشن تا تیره و بافتی نیمه‌مرطوب است. کبکاب به دلیل طعم شیرین و گوشتی که دارد، هم به صورت تازه و هم خشک‌شده مصرف می‌شود. </p>
+        <a href="#">بیشتر</a>
+    </article>
+
+    <article>
+        <img src="image/خرمای-زاهدی-درجه-یک.jpg" alt="عکس">
+        <h3>خرما زاهدی</h3>
+<p>خرمای زاهدی یکی از انواع خرماهای پرطرفدار و صادراتی ایران است که عمدتاً در استان‌های خوزستان، فارس، و بوشهر کشت می‌شود. این خرما دارای رنگ زرد طلایی و بافتی خشک و نیمه‌خشک است. طعم شیرین و ملایم خرمای زاهدی، همراه با ماندگاری بالا، آن را به گزینه‌ای مناسب برای صادرات تبدیل کرده است.</p>
+        <a href="#">بیشتر</a>
+    </article>
+
+        <article>
+        <img src="image/1090432_286.jpg" alt="عکس">
+        <h3>خرما استعمران</h3>
+        <p>خرمای استعمران، که در برخی مناطق به آن خرمای سعمران نیز گفته می‌شود، یکی از انواع محبوب و اقتصادی خرما در ایران است. این خرما عمدتاً در استان خوزستان کشت می‌شود و دارای رنگ قهوه‌ای تیره و بافتی نیمه‌خشک است. طعم شیرین و خوشمزه، همراه با قابلیت نگهداری طولانی مدت، خرمای استعمران را به یک گزینه مناسب برای صادرات تبدیل کرده است.</p>
+                <a href="#">بیشتر</a>
+    </article>
+
+        <article>
+        <img src="image/16710940671453.jpg" alt="عکس">
+        <h3>خرما دیری</h3>
+<p>خرمای دیری یکی از انواع خرماهای خوشمزه و پرطرفدار است که عمدتاً در مناطق جنوبی ایران و همچنین کشورهای حوزه خلیج فارس کشت می‌شود. این خرما دارای رنگ قهوه‌ای تیره و بافتی نیمه‌مرطوب تا خشک است. طعم شیرین و کاراملی خرمای دیری، آن را به یک انتخاب محبوب برای مصرف روزانه تبدیل کرده است. </p>
+        <a href="#">بیشتر</a>
+    </article>
+
+</section>
+<footer>
+    <p>© 2026 خرما زرین - تمامی حقوق محفوظ است.</p>
+</footer>
+</body>
+</html>

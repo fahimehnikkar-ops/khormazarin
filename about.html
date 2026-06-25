@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>درباره ما</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+
+body{
+    margin:0;
+    font-family:sans-serif;
+    background-image:url("image/4cd31709-e482-4782-8881-b4a1b564e580.png");
+    background-size: cover;
+}
+
+/* هدر */
+header{
+    background-color:#8B4513;
+    padding:10px 20px;
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.logo img{
+    width: 50px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    margin:0;
+    padding:0;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+    padding:6px 15px;
+    border-radius:5px;
+    text-align:center;
+}
+
+nav a:hover{
+    background-color:rgb(186, 147, 73);
+}
+
+.btn{
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:8px;
+    font-weight:bold;
+    background:#5a2d0c;
+}
+
+.about-logo{
+    text-align:center;
+    padding: 5px;
+}
+
+.about-logo img{
+   max-width:100%;
+    width:400px;
+    height:auto;
+}
+.about-box{
+    width:80%;
+    max-width:900px;
+    margin:20px auto;
+    padding:5px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.3);
+    border-radius:30px;
+    text-align:center;
+    box-shadow:0 8px 32px rgba(0,0,0,0.1);
+    border:1px solid rgba(255,255,255,0.4);
+    box-shadow:0 8px 30px rgba(0,0,0,0.1);
+}
+
+.about-box h2{
+    color:#8B4513;
+    font-size:35px;
+    margin-bottom:20px;
+}
+
+.about-box p{
+    font-size:18px;
+    line-height:2;
+}
+.features{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:-60px;
+    position:relative;
+    z-index:2;
+    padding: 40px;
+}
+.feature{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.3);
+    margin-top:20px;
+    border-radius:20px;
+    padding:40px;
+    width:120px;
+    text-align:center;
+    transition:0.3s;
+}
+.feature:hover{
+    transform:translateY(-5px) scale(1.05);
+    box-shadow:0 10px 20px rgba(139,69,19,0.15);
+}
+@media (max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav ul{
+        gap:12px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .about-logo img{
+        width:180px;
+    }
+
+    .about-box{
+        width:90%;
+        padding:15px;
+    }
+
+    .about-box h3{
+        font-size:24px;
+    }
+
+    .about-box p{
+        font-size:14px;
+        line-height:1.8;
+    }
+
+    .features{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .feature{
+    margin-top:20px;
+   width:100px;
+    padding:20px;    }
+    }
+</style>
+
+<body>
+<header>
+
+    <div class="logo">
+        <img src="image/imageslogo-removebg-preview.png" alt="لوگو">
+    </div>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">خانه</a></li>
+            <li><a href="maghale.html">مقالات</a></li>
+            <li><a href="about.html">درباره ما</a></li>
+            <li><a href="Contact Us.html">تماس با ما</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="about-logo">
+    <img src="image/imageslogo-removebg-preview.png" alt="لوگو">
+</section>
+<section class="about-box">
+    <h3>درباره ما</h3>
+    <p>خرما زرین از دل نخلستان های جنوب ابران متولد شد. ما با عشق به طبیعت و احترام به اصالت، بهترین و با کیفیت ترین خرماها را برای شما انتخاب می‌کنیم.</p>
+    <p>هدف ما ارائه محصولی سالم، طبیعی و لذیذ است تا طعم واقعی خرما را در هرلحظه تجربه کنید.</p>
+    <p>اعتماد شما سرمایه ماست.</p>
+</section>
+
+<section class="features">
+
+    <div class="feature">
+        <h3>🌴</h3>
+        <p>محصولات طبیعی</p>
+    </div>
+
+    <div class="feature">
+        <h3>🚚</h3>
+        <p>ارسال سریع</p>
+    </div>
+
+    <div class="feature">
+        <h3>⭐</h3>
+        <p>کیفیت برتر</p>
+    </div>
+
+    <div class="feature">
+        <h3>❤️</h3>
+        <p>رضایت مشتری</p>
+    </div>
+
+</section>
+
+</body> 
+</html>

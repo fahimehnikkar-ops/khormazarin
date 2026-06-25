@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<title>خرما زرین</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+    margin:0;
+    font-family:sans-serif;
+}
+
+/* هدر */
+header{
+    background-color:#8B4513;
+    padding:10px 20px;
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:50px;
+}
+
+/* منو */
+nav ul{
+    display:flex;
+    list-style:none;
+    margin:0;
+    padding:0;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:6px 10px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background-color:rgb(186, 147, 73);
+}
+
+/* دکمه‌های سمت چپ */
+.header1{
+    margin-right:auto;
+    display:flex;
+    gap:10px;
+}
+
+/* دکمه اصلی */
+.btn{
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:8px;
+    font-weight:bold;
+    background:#5a2d0c;
+    display:inline-block;
+    transition:0.3s;
+}
+
+/* هاور درست و یکپارچه */
+.btn:hover{
+    background-color:rgb(186, 147, 73);
+    transform:translateY(-5px) scale(1.05);
+}
+
+/* هیرو */
+.hero{
+    height:500px;
+    background-image:url("image/imagesdate3.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.4);
+    padding: 50px;
+    width: 500px;
+    height: 200px;
+    border-radius:15px;
+}
+
+.hero h2{
+    color:white;
+    font-size:40px;
+}
+
+.hero p{
+    color:white;
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.hero-btn{
+    color:white;
+    background:#5a2d0c;
+    padding:10px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    display:inline-block;
+    transition:0.3s;
+}
+
+.hero-btn:hover{
+    transform:translateY(-5px) scale(1.05);
+    background:rgb(186, 147, 73);
+}
+
+/* مقالات */
+.articles-header{
+    text-align:center;
+    padding:40px 20px 20px;
+}
+
+.articles{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+    padding:20px;
+}
+
+article{
+    width:220px;
+    background:#f9f9f9;
+    border-radius:10px;
+    padding:10px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    height:420px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+    overflow:hidden;
+}
+
+article:hover{
+    transform:translateY(-5px);
+}
+
+article img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+article a{
+    margin-top:auto;
+    color:#8B4513;
+    text-decoration:none;
+    font-weight:bold;
+}
+article p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    line-height: 1.8;
+}
+
+/* فوتر */
+.footer{
+    background-color:#8B4513;
+    color:white;
+    text-align:center;
+    padding:10px 20px;
+}
+
+/* ریسپانسیو */
+@media (max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-direction:column;
+    align-items:center;
+    gap:5px;
+}
+
+.header1{
+    margin-right:0;
+    justify-content:center;
+}
+
+.hero{
+    height:350px;
+}
+
+.hero h2{
+    font-size:28px;
+}
+
+article{
+    width:90%;
+    max-width:350px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="image/imageslogo.png" alt="لوگو">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">خانه</a></li>
+            <li><a href="maghale.html">مقالات</a></li>
+            <li><a href="about.html">درباره ما</a></li>
+            <li><a href="Contact Us.html">تماس با ما</a></li>
+        </ul>
+    </nav>
+
+    <nav class="header1">
+        <a href="login.html" class="btn">ورود</a>
+        <a href="#" class="btn">سفارش آنلاین</a>
+    </nav>
+
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>طعم اصیل خرمای ایرانی</h2>
+        <p>عرضه مستقیم بهترین خرماهای ایران</p>
+        <a href="#" class="hero-btn">مشاهده محصولات</a>
+    </div>
+</section>
+
+<section class="articles-header">
+    <h1>«مجلــه خرما زرین»</h1>
+</section>
+
+<section class="articles">
+
+<article>
+    <img src="image/images2.jpg">
+    <h3>خرمای پیارم</h3>
+    <p>خرما یکی از مهم‌ترین محصولات کشاورزی مناطق گرمسیری جهان به شمار می‌رود و ایران نیز به عنوان یکی از بزرگ‌ترین تولیدکنندگان خرما، انواع متنوعی از این محصول ارزشمند را تولید می‌کند.</p>
+    <a href="piarom.html">بیشتر</a>
+</article>
+
+<article>
+    <img src="image/images1.jpg">
+    <h3>خرما مضافتی بم</h3>
+        <p> خرمای مضافتی شامل آهن، انرژی، کلسیم، پتاسیم و مواد مفید دیگر می‌شود. مصرف خرمای مضافتی برای بهبود وضعیت قلب،...</p>
+    <a href="#">بیشتر</a>
+</article>
+
+<article>
+    <img src="image/images.jpg">
+    <h3>رطب شیرین</h3>
+        <p>خرما خواص زیادی برای سلامتی بدن دارد که از جمله‌ی آن‌ها می‌توانیم به کاهش وزن و چربی‌سوزی، جلوگیری از سرطان روده و...</p>
+    <a href="#">بیشتر</a>
+</article>
+
+</section>
+<footer class="footer">
+<p>© 2026 خرما زرین - تمامی حقوق محفوظ است.</p>
+</footer>
+
+</body>
+</html>
