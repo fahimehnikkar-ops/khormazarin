@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<title>سبد خرید</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+    margin:0;
+    font-family:sans-serif;
+}
+
+/* هدر */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #8B4513;
+}
+
+/* سمت راست هدر */
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* لوگو */
+.logo img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* منو */
+nav ul{
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    gap: 30px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: .3s;
+}
+
+nav a:hover{
+    color: #F4D58D;
+}
+
+/* هیرو */
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:60px 20px;
+}
+.hero-content{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.hero img{
+    width: 250px;
+    height: 250px;
+}
+.hero span{
+    color:#777;
+    font-size:10px;
+}
+
+.shopping-cart{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+}
+.shopping-card{
+    display: flex;
+    gap: 30px;
+    padding: 20px 25px;
+    border-radius: 15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    background: #FFEFD5;
+    transition: 0.3s;
+}
+.shopping-card:hover{
+    transform:translateY(-5px);
+}
+
+.shopping-image img{
+    flex:0 0 180px;
+    width:180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.shopping-info{
+display: flex;
+flex: 1;
+flex-direction: column;
+flex:1;
+gap: 20px;
+}
+
+.shopping-actions{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.shopping-count{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+   
+}
+.shopping-count button{
+    width:30px;
+    height:30px;
+    border:none;
+    border-radius:10px;
+    background:#8B4513;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:0.3s;
+}
+.shopping-count button:hover{
+    background:#b86b28;
+    transform:scale(1.08);
+}
+
+.delete-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+
+    width:110px;
+    height:40px;
+
+    background:#fff4f4;
+    color:#c0392b;
+
+    border:1px solid #e8bcbc;
+    border-radius:10px;
+
+    text-decoration:none;
+    font-size:15px;
+    font-weight:600;
+
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.delete-btn:hover{
+    background:#e74c3c;
+    color:#fff;
+    transform:translateY(-2px);
+}
+/* فوتر */
+.footer{
+    background-color:#8B4513;
+    color:white;
+    text-align:center;
+    padding:10px 20px;
+}
+
+/* ریسپانسیو */
+@media (max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-direction:column;
+    align-items:center;
+    gap:5px;
+}
+
+.header1{
+    margin-right:0;
+    justify-content:center;
+}
+
+.hero{
+    height:350px;
+}
+
+.hero h2{
+    font-size:28px;
+}
+
+article{
+    width:90%;
+    max-width:350px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+        <div class="header-right">
+        <div class="logo">
+            <img src="9a8ea0ba-6330-41e5-8513-9844fc563d85.png" alt="لوگو">
+        </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">خانه</a></li>
+            <li><a href="maghale.html">مقالات</a></li>
+            <li><a href="about.html">درباره ما</a></li>
+            <li><a href="Contact Us.html">تماس با ما</a></li>
+        </ul>
+    </nav>
+        </div>
+
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <div>
+            <img src="f78e5644-f567-4350-8757-2f83b4e3285b.png">
+        </div>
+        <h2>«سبد خرید شما»</h2>
+        <span>محصولات انتخاب‌شده را بررسی و سفارش خود را نهایی کنید.</span>
+    </div>
+</section>
+
+<section class="shopping-cart">
+    <article class="shopping-card">
+        <div class="shopping-image">
+            <img src="خرمای-زاهدی-درجه-یک.jpg" alt="عکس خرما">
+        </div>
+        <div class="shopping-info">
+            <h3>خرمای زاهدی</h3>
+            <div class="shopping-weight">
+                <span>وزن:</span>
+                <span>1 کیلوگرم</span>
+            </div>
+            <div class="shopping-price">
+                <span>قیمت:</span>
+                <span>500,000 تومان</span>
+            </div>
+        </div>
+        <div class="shopping-actions">
+            <div class="shopping-count">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+        </div>
+            <a href="#" class="delete-btn">
+    🗑
+    <span>حذف</span>
+</a>
+        </div>
+    </article>
+</section>
+
+
+
+<footer class="footer">
+<p>© 2026 خرما زرین - تمامی حقوق محفوظ است.</p>
+</footer>
+
+</body>
+</html>

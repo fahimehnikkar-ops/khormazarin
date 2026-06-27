@@ -16,38 +16,49 @@ body{
 
 /* هدر */
 header{
-    background-color:#8B4513;
-    padding:10px 20px;
-    display:flex;
-    align-items:center;
-    gap:30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #8B4513;
 }
 
+/* سمت راست هدر */
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* لوگو */
 .logo img{
-    width: 50px;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
 }
 
+/* منو */
 nav ul{
-    display:flex;
-    list-style:none;
-    margin:0;
-    padding:0;
-    gap:20px;
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    gap: 30px;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    transition:0.3s;
-    padding:6px 15px;
-    border-radius:5px;
-    text-align:center;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: .3s;
 }
 
 nav a:hover{
-    background-color:rgb(186, 147, 73);
+    color: #F4D58D;
 }
-
 .btn{
     color:white;
     text-decoration:none;
@@ -166,12 +177,12 @@ nav a:hover{
 
 <body>
 <header>
+        <div class="header-right">
+        <div class="logo">
+            <img src="9a8ea0ba-6330-41e5-8513-9844fc563d85.png" alt="لوگو">
+        </div>
 
-    <div class="logo">
-        <img src="imageslogo-removebg-preview.png" alt="لوگو">
-    </div>
-
-    <nav class="nav">
+    <nav>
         <ul>
             <li><a href="index.html">خانه</a></li>
             <li><a href="maghale.html">مقالات</a></li>
@@ -179,12 +190,13 @@ nav a:hover{
             <li><a href="Contact Us.html">تماس با ما</a></li>
         </ul>
     </nav>
+        </div>
 </header>
 <section class="about-logo">
-    <img src="imageslogo-removebg-preview.png" alt="لوگو">
+    <img src="9a8ea0ba-6330-41e5-8513-9844fc563d85.png" alt="لوگو">
 </section>
 <section class="about-box">
-    <h3>درباره ما</h3>
+    <h2>خرما زرین</h2>
     <p>خرما زرین از دل نخلستان های جنوب ابران متولد شد. ما با عشق به طبیعت و احترام به اصالت، بهترین و با کیفیت ترین خرماها را برای شما انتخاب می‌کنیم.</p>
     <p>هدف ما ارائه محصولی سالم، طبیعی و لذیذ است تا طعم واقعی خرما را در هرلحظه تجربه کنید.</p>
     <p>اعتماد شما سرمایه ماست.</p>

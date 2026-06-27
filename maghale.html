@@ -12,47 +12,89 @@ body{
     margin:0;
     font-family:sans-serif;
 }
-
 /* هدر */
 header{
-    background-color:#8B4513;
-    padding:10px 20px;
-    display:flex;
-    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #8B4513;
 }
 
+/* سمت راست هدر */
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* لوگو */
 .logo img{
-    width:50px;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
 }
 
 /* منو */
 nav ul{
-    display:flex;
-    list-style:none;
-    margin:0;
-    padding:0;
-    gap:20px;
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    gap: 30px;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    padding:6px 10px;
-    border-radius:5px;
-    transition:0.3s;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: .3s;
 }
 
 nav a:hover{
-    background-color:rgb(186, 147, 73);
+    color: #F4D58D;
+}
+/* آیکون‌های سمت چپ */
+.header-actions{
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-/* دکمه‌های سمت چپ */
-.header1{
-    margin-right:auto;
-    display:flex;
-    gap:10px;
+.header-icon{
+    width: 56px;
+    height: 56px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(250,239,210,.15);
+
+    border-radius: 16px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+
+    transition: .3s;
+    cursor: pointer;
+
+    text-decoration: none;
 }
 
+.header-icon img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.header-icon:hover{
+    transform: translateY(-3px);
+    background: rgba(250,239,210,.30);
+    box-shadow: 0 8px 20px rgba(0,0,0,.18);
+}
 /* دکمه اصلی */
 .btn{
     color:white;
@@ -181,10 +223,10 @@ article p{
 
 <!-- هدر -->
 <header>
-
-    <div class="logo">
-        <img src="imageslogo.png" alt="لوگو">
-    </div>
+        <div class="header-right">
+        <div class="logo">
+            <img src="9a8ea0ba-6330-41e5-8513-9844fc563d85.png" alt="لوگو">
+        </div>
 
     <nav>
         <ul>
@@ -194,10 +236,18 @@ article p{
             <li><a href="Contact Us.html">تماس با ما</a></li>
         </ul>
     </nav>
-    <nav class="header1">
-    <a href="login.html" class="btn">ورود</a>
-    <a href="#" class="btn">سبد خرید</a>
-    </nav>
+        </div>
+           <div class="header-actions">
+
+        <a href="login.html" class="header-icon">
+            <img src="9fc7c9d7-2e09-47e4-88eb-e347c44587e8 (3).png" alt="ورود">
+        </a>
+
+        <a href="shoppingcart.html" class="header-icon">
+            <img src="9fc7c9d7-2e09-47e4-88eb-e347c44587e8 (2).png" alt="سبد خرید">
+        </a>
+
+    </div>
 
 </header>
 <!-- مقالات -->
