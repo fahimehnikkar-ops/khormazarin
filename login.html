@@ -119,11 +119,33 @@
         <h2>ورود به حساب کاربری</h2>
         <p>شماره موبایل خود را وارد کنید</p>
 
-        <input type="tel" placeholder="09xxxxxxxxx">
-        <button>ورود</button>
+        <input id="fmobile" type="tel" class="cmobile" maxlength="11" placeholder="09xxxxxxxxx">
+        <button onclick="login()">ورود</button>
     </div>
 </section>
+<script>
 
+function login(){
+
+    var mobile=document.getElementById("fmobile").value;
+
+    console.log(mobile);
+
+    if(mobile.length<11 || mobile.length>11){
+        alert("کاربر گرامی، شماره موبایل وارد شده صحیح نمی‌باشد");
+        return;
+    }
+
+    if(mobile.substring(0,2)!="09"){
+        alert("کاربر گرامی، شماره موبایل را به صورت صحیح وارد کنید.");
+        return;
+    }
+
+    alert("ممنون بابت شماره موبایلت :)");
+}
+
+</script>
 </body>
 
 </html>
+
